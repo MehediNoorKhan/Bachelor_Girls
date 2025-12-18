@@ -98,7 +98,7 @@ const CircleCarousel: React.FC = () => {
           <div className="w-[520px]" />
 
           {right && (
-            <div className="max-w-[260px] text-left text-white font-bold leading-tight text-[28px] lg:text-[40px] xl:text-[56px]">
+            <div className="max-w-[220px] pl-[20px] text-left text-white font-bold leading-tight text-[28px] lg:text-[40px] xl:text-[56px]">
               {right}
             </div>
           )}
