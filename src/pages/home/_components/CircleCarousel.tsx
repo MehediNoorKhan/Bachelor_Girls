@@ -64,7 +64,7 @@ const CircleCarousel: React.FC = () => {
 
         {/* IMAGE LAYER */}
         <div className="absolute inset-0 pointer-events-none hidden lg:flex items-center justify-center">
-          {slideImages.map((src, i) => (
+          {slideImages.map((_, i) => (
             <img
   key={i}
   ref={(el) => { if (el) slideRefs.current[i] = el; }}
