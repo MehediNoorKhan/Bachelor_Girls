@@ -424,6 +424,14 @@ useEffect(() => {
   };
 }, [index]);
 
+useEffect(() => {
+  const interval = setInterval(() => {
+    animate(1); // automatically go to the next slide
+  }, 3000); // 3 seconds
+
+  return () => clearInterval(interval); // cleanup on unmount
+}, [index]); // optional: you can remove 'index' if animate handles the state correctly
+
   /* ================================================ */
 
   const getTitleParts = (title: string) => {
