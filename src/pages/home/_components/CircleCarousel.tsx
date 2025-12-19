@@ -455,7 +455,7 @@ useEffect(() => {
               }}
               src={slideImages[i]}
               alt={bannerSlides[i].title}
-              className={`absolute left-1/2 -translate-x-1/2 h-[100%] max-w-[620px] object-contain transition-opacity duration-1000 ${
+              className={`absolute left-1/2 -translate-x-1/2 h-[100%] max-w-[620px]  object-contain transition-opacity duration-1000 ${
                 i === index ? "opacity-100" : "opacity-0"
               }`}
             />
@@ -490,7 +490,7 @@ useEffect(() => {
   </div>
 
   {/* CENTERED TEXT */}
-  <div className="flex flex-col items-center text-center text-white px-4">
+  <div className="flex flex-col items-center text-center text-white px-4 z-30">
     <h2 className="text-[18px] font-bold">
       {bannerSlides[index].title}
     </h2>
@@ -533,9 +533,9 @@ useEffect(() => {
 
 
        {/* BOTTOM CARD */}
-<div className="hidden md:flex items-center justify-between w-full max-w-[1440px] mx-auto pb-10 px-6">
+<div className="hidden md:flex items-center justify-between w-full max-w-[1440px] mx-auto pb-10 px-6 z-40">
   {/* LEFT: TEXT */}
-  <div className="max-w-[420px] text-white">
+  <div className="max-w-[300px] text-white">
     <h2 className="text-[18px] lg:text-[28px] font-bold">
       {bannerSlides[index].title}
     </h2>
