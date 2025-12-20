@@ -170,11 +170,11 @@ useEffect(() => {
         {/* ===== MOBILE STACK (TEXT TOP, IMAGE BOTTOM) ===== */}
 <div className="flex flex-col-reverse gap-4 lg:hidden pt-10">
   {/* MOBILE IMAGE WITH CONTROLS */}
-  <div className="relative flex justify-center">
+  <div className="relative flex  justify-center">
     <img
       src={slideImages[index]}
       alt={bannerSlides[index].title}
-      className="h-[60vh] object-contain"
+      className="h-[35vh] object-contain"
     />
 
     {/* CONTROLS ON IMAGE */}
