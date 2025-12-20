@@ -318,11 +318,11 @@ const CircleCarousel: React.FC = () => {
   const [bg, setBg] = useState(bannerSlides[0].backgroundColor);
 
   const slideImages = [
-    "/images/bannerimg1.png",
-    "/images/bannerimg2.png",
-    "/images/bannerimg3.png",
-    "/images/bannerimg4.png",
-    "/images/bannerimg5.png",
+    "/images/heroimg1.png",
+    "/images/heroimg2.png",
+    "/images/heroimg3.png",
+    "/images/heroimg4.png",
+    "/images/heroimg5.png",
   ];
 
 const animate = (direction: 1 | -1) => {
@@ -471,7 +471,7 @@ useEffect(() => {
         </div>
 
         {/* ===== MOBILE STACK (TEXT TOP, IMAGE BOTTOM) ===== */}
-<div className="flex flex-col-reverse gap-6 lg:hidden pt-10">
+<div className="flex flex-col-reverse gap-4 lg:hidden pt-10">
   {/* MOBILE IMAGE WITH CONTROLS */}
   <div className="relative flex justify-center">
     <img
@@ -481,7 +481,7 @@ useEffect(() => {
     />
 
     {/* CONTROLS ON IMAGE */}
-    <div className="absolute inset-0 top-24 flex items-center justify-between px-4">
+    {/* <div className="absolute inset-0 top-24 flex items-center justify-between px-4">
       <button
         onClick={() => animate(-1)}
         className="w-9 h-9 rounded-full border-2 border-white text-white font-bold"
@@ -494,12 +494,12 @@ useEffect(() => {
       >
         &gt;
       </button>
-    </div>
+    </div> */}
   </div>
 
   {/* CENTERED TEXT */}
   <div className="flex flex-col items-center text-center text-white px-4 z-30">
-    <h2 className="text-[18px] font-bold">
+    <h2 className="text-[36px] lg:text-[44px] xl:text-[56px] font-bold">
       {bannerSlides[index].title}
     </h2>
     <p className="mt-2 text-[14px] text-white/50">
@@ -522,7 +522,7 @@ useEffect(() => {
     <div
       ref={leftTitleRef}
       className="text-left text-white font-bold leading-tight
-                 text-[28px] lg:text-[40px] xl:text-[56px]"
+                 text-[32px] lg:text-[56px] xl:text-[68px]"
     >
       {left}
     </div>
@@ -532,7 +532,7 @@ useEffect(() => {
     <div
       ref={rightTitleRef}
       className="text-right text-white font-bold leading-tight
-                 text-[28px] lg:text-[40px] xl:text-[56px]"
+                 text-[32px] lg:text-[56px] xl:text-[68px]"
     >
       {right}
     </div>
@@ -543,11 +543,11 @@ useEffect(() => {
        {/* BOTTOM CARD */}
 <div className="hidden md:flex items-center justify-between w-full max-w-[1440px] mx-auto pb-10 px-6 z-40">
   {/* LEFT: TEXT */}
-  <div className="max-w-[300px] text-white">
-    <h2 className="text-[18px] lg:text-[28px] font-bold">
+  <div className="max-w-[400px] text-white">
+    <h2 className="text-[24px] lg:text-[44px] xl:text-[56px] font-bold">
       {bannerSlides[index].title}
     </h2>
-    <p className="mt-2 text-[14px] text-white/50">
+    <p className="mt-2 text-[24px] text-white/50">
       {bannerSlides[index].description}
     </p>
     <button
@@ -559,7 +559,7 @@ useEffect(() => {
   </div>
 
   {/* RIGHT: ARROWS */}
-  <div className="flex gap-3 lg:gap-6 text-white text-xl lg:text-3xl font-bold select-none">
+  {/* <div className="flex gap-3 lg:gap-6 text-white text-xl lg:text-3xl font-bold select-none">
     <button
       onClick={() => animate(-1)}
       className="px-3 py-1 lg:px-4 lg:py-2 rounded-full border-2 border-white"
@@ -572,7 +572,7 @@ useEffect(() => {
     >
       &gt;
     </button>
-  </div>
+  </div> */}
 </div>
 
 

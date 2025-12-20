@@ -5,31 +5,31 @@ export const bannerSlides: BannerSlide[] = [
   {
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Ipsum commodo etiam massa lectus est vitae ante donec at.",
+      "Book your next service seemingly",
     backgroundColor: "#9A7965",
   },
   {
-    title: "Media Photography",
+    title: "Media & Photography",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Ipsum commodo etiam massa lectus est vitae ante donec at.",
+      "Book your next service seemingly",
     backgroundColor: "#101112",
   },
   {
     title: "Home Services",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Ipsum commodo etiam massa lectus est vitae ante donec at.",
+      "Book your next service seemingly",
     backgroundColor: "#246AA3",
   },
   {
     title: "Fitness & Health",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Ipsum commodo etiam massa lectus est vitae ante donec at.",
+      "Book your next service seemingly",
     backgroundColor: "#2E8389",
   },
   {
-    title: "Beauty Product",
+    title: "Beauty & Wellness",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Ipsum commodo etiam massa lectus est vitae ante donec at.",
+      "Book your next service seemingly",
     backgroundColor: "#692770",
   },
 ];
